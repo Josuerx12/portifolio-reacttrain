@@ -1,0 +1,19 @@
+@use '../../styles/Variables'
+
+.mobileBtn svg
+    display: none
+    position: fixed
+    top: 5px
+    right: 5px
+    font-size: 3rem
+    text-align: center
+    padding: 1rem
+    border-radius: Variables.$btn-radius
+    color: Variables.$header-txt-color
+    background: Variables.$header-bg
+    cursor: pointer
+
+
+@media (max-width: 1000px)
+    .mobileBtn svg
+        display: block
